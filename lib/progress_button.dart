@@ -85,7 +85,8 @@ class ProgressButton extends StatefulWidget {
     Map<ButtonState, Widget> stateWidgets = {
       ButtonState.idle: buildChildWithIcon(
           iconedButtons[ButtonState.idle]!, iconPadding, textStyle),
-      ButtonState.loading: Column(),
+      ButtonState.loading: buildChildWithIcon(
+          iconedButtons[ButtonState.loading]!, iconPadding, textStyle),
       ButtonState.fail: buildChildWithIcon(
           iconedButtons[ButtonState.fail]!, iconPadding, textStyle),
       ButtonState.success: buildChildWithIcon(
